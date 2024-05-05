@@ -46,13 +46,53 @@
     </header>
 
     <main>
-            <div class="container-md">  <!-- contenitore responsive che resta al centro, ma che su mobile invece prende tutto lo schermo -->
+            
+        <form action="">
+
+         <div class="container-md">  <!-- contenitore responsive che resta al centro, ma che su mobile invece prende tutto lo schermo -->
                 <div class="row">
+                    <div class="col">                        
+                        <h2>Nuovo Libro</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">   <!-- Nome autore                      -->
+                        
+                        
+                        <label for="firstName" class="form-label fw-semibold">Nome Autore</label>
+                        <input type="text" id="firstName" class="form-control fw-semibold" placeholder="First name" aria-label="First name">
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>                        
 
-                    <div class="col"></div>
+                        
+                    </div>
+                
 
+                
+                    <div class="col">   <!-- Cognome autore                      -->                     
+                                       
+
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+
+
+            
+
+
+
+                    
                 </div>
             </div>
+        </form>
     </main>
 
 
