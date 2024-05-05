@@ -47,15 +47,15 @@
 
     <main>
             
-        <form action="">
+        <form action="index.html" method="post">
 
          <div class="container-md">  <!-- contenitore responsive che resta al centro, ma che su mobile invece prende tutto lo schermo -->
-                <div class="row">
+                <div class="row pt-3">
                     <div class="col">                        
                         <h2>Nuovo Libro</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row pt-3">
                     <div class="col-6">   <!-- Nome autore-->                    
                         <label for="firstName" class="form-label fw-semibold">Nome Autore</label>
                         <input type="text" id="firstName" class="form-control fw-semibold border-2" placeholder="Inserisci il nome dell'autore" aria-label="First name">                                         
@@ -65,15 +65,15 @@
                         <input type="text" id="lastName" class="form-control fw-semibold border-2" id="lastName" placeholder="Inserisci il cognome" value="" required="">
                    </div>
                 </div>
-                <div class="row">
+                <div class="row pt-3">
                     <div class="col">   <!-- Titolo libro-->                    
                         <label for="title" class="form-label fw-semibold">Titolo</label>
                         <input type="text" id="title" class="form-control fw-semibold border-2" placeholder="Inserisci il titolo del libro" aria-label="First name">
                         <p class="fw-semibold">moment Titolo versione italiana</p>                                         
                     </div>      
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg">   <!-- Genere libro-->                    
+                <div class="row pt-3">
+                    <div class="col-12 col-lg pb-3">   <!-- Genere libro-->                    
                         <label for="genere" class="form-label fw-semibold">Genere</label>
                         <select class="form-select fw-semibold border-2" id="genere" required="">
                             <option value="">Scegli il genere</option>
@@ -83,32 +83,34 @@
                         </select>
                     </div>      
 
-                    <div class="col-12 col-lg">   <!-- Anno di pubblicazione-->                    
+                    <div class="col-12 col-lg pb-3">   <!-- Anno di pubblicazione-->                    
                         <label for="anno" class="form-label fw-semibold">Anno di Pubblicazione</label>
                         <input type="text" id="anno" class="form-control fw-semibold border-2" placeholder="Inserisci l'anno" aria-label="First name">
                     </div> 
                     
-                    <div class="col-12 col-lg">   <!-- ISBN#-->                    
+                    <div class="col-12 col-lg pb-3">   <!-- ISBN#-->                    
                         <label for="ISBN" class="form-label fw-semibold">ISBN#</label>
                         <input type="text" id="ISBN" class="form-control fw-semibold border-2" placeholder="Inserisci il codice ISBN#" aria-label="First name">
                     </div>      
                 </div>
-                <div class="row">  
+                <div class="row pt-3">  
                     <div class="col">   <!-- hr, Orizzontal Rule -->    
                         <hr>
                     </div>      
                 </div>
                 <div class="row">  
-                    <div class="col">   <!-- Note-->                    
+                    <div class="col pt-3">   <!-- Note-->                    
                         <label for="notes" class="form-label fw-semibold">Note</label>
                         <textarea class="form-control fw-semibold border-2" placeholder="Inserisci eventuali note sul libro" id="notes" rows="3"></textarea>                        
-                        <div class="form-check">
+                        <div class="form-check pt-3">
                             <input class="form-check-input border-2" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label fw-semibold" for="flexCheckDefault">
                               Disponibile anche in lingua digitale
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                        <div class="py-3">
+                            <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                        </div>
                     </div>       
                 </div>
                   
@@ -132,8 +134,8 @@
 
 cosa rimane
 
-.dai un occhiata finale al form, (il form iniziale)
 .moment Titolo versione italiana
+.padding generale
 
 
 -->
