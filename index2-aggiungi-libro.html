@@ -56,41 +56,62 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">   <!-- Nome autore                      -->
-                        
-                        
+                    <div class="col-6">   <!-- Nome autore-->                    
                         <label for="firstName" class="form-label fw-semibold">Nome Autore</label>
-                        <input type="text" id="firstName" class="form-control fw-semibold" placeholder="First name" aria-label="First name">
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>                        
-
-                        
-                    </div>
-                
-
-                
-                    <div class="col">   <!-- Cognome autore                      -->                     
-                                       
-
-                        <label for="lastName" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                        <div class="invalid-feedback">
-                            Valid last name is required.
-                        </div>
-                        
-                    </div>
+                        <input type="text" id="firstName" class="form-control fw-semibold border-2" placeholder="Inserisci il nome dell'autore" aria-label="First name">                                         
+                    </div>              
+                    <div class="col-6">   <!-- Cognome autore-->                  
+                        <label for="lastName" class="form-label fw-semibold">Cognome Autore</label>
+                        <input type="text" id="lastName" class="form-control fw-semibold border-2" id="lastName" placeholder="Inserisci il cognome" value="" required="">
+                   </div>
                 </div>
+                <div class="row">
+                    <div class="col">   <!-- Titolo libro-->                    
+                        <label for="title" class="form-label fw-semibold">Titolo</label>
+                        <input type="text" id="title" class="form-control fw-semibold border-2" placeholder="Inserisci il titolo del libro" aria-label="First name">
+                        <p class="fw-semibold">moment Titolo versione italiana</p>                                         
+                    </div>      
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg">   <!-- Genere libro-->                    
+                        <label for="genere" class="form-label fw-semibold">Genere</label>
+                        <select class="form-select fw-semibold border-2" id="genere" required="">
+                            <option value="">Scegli il genere</option>
+                            <option>genere 1</option>
+                            <option>genere 2</option>
+                            <option>genere 3</option>
+                        </select>
+                    </div>      
 
-
-
-
-            
-
-
-
+                    <div class="col-12 col-lg">   <!-- Anno di pubblicazione-->                    
+                        <label for="anno" class="form-label fw-semibold">Anno di Pubblicazione</label>
+                        <input type="text" id="anno" class="form-control fw-semibold border-2" placeholder="Inserisci l'anno" aria-label="First name">
+                    </div> 
                     
+                    <div class="col-12 col-lg">   <!-- ISBN#-->                    
+                        <label for="ISBN" class="form-label fw-semibold">ISBN#</label>
+                        <input type="text" id="ISBN" class="form-control fw-semibold border-2" placeholder="Inserisci il codice ISBN#" aria-label="First name">
+                    </div>      
                 </div>
+                <div class="row">  
+                    <div class="col">   <!-- hr, Orizzontal Rule -->    
+                        <hr>
+                    </div>      
+                </div>
+                <div class="row">  
+                    <div class="col">   <!-- Note-->                    
+                        <label for="notes" class="form-label fw-semibold">Note</label>
+                        <textarea class="form-control fw-semibold border-2" placeholder="Inserisci eventuali note sul libro" id="notes" rows="3"></textarea>                        
+                        <div class="form-check">
+                            <input class="form-check-input border-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label fw-semibold" for="flexCheckDefault">
+                              Disponibile anche in lingua digitale
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                    </div>       
+                </div>
+                  
             </div>
         </form>
     </main>
@@ -111,12 +132,8 @@
 
 cosa rimane
 
-.quando và in larghezza mobile, non riesco a far rimanere tutto nello schermo il bottone rosso ''non disponibile'', 
-ma anzi va accapo, quindi ho dovuto dirgli che la finestra 'titolo' non è grande 6 ma 5 in modalità mobile.
-con un pò di attenzione l'avrei risolto, ma sono indietro con le lezioni. quindi me lo appunto.
- ((((problema RISOLTO, nella lezione di correzione si fà notare che si potrebbe usare ''text-nowrap'' là dove serve))))
+.dai un occhiata finale al form, (il form iniziale)
+.moment Titolo versione italiana
 
-.extra compreso (la risposta alle 2 tabelle vicino forse è ''d-inline-flex''' ps: la risposta non è 'd-inline-block-, 
-ma usare bene in ordine i contenitori bpptstrap:  container, row, col')
 
 -->
